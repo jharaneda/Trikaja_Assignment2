@@ -1,50 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap CSS -->
 <link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
-	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
 	crossorigin="anonymous">
-<title>About Kadyn</title>
+
+<title>Team Trikaja</title>
 </head>
 <body>
-	<form method="POST" action="/getLikes" modelAttribute="likesData">
-		<div class="row">
-			<div class="col">
-				<img src="${host}/img/selfie_placeholder.jpg" />
+	<form method="POST" action="/editProfile" modelAttribute="profileData">
+		<div class="container">
+			<div class="container rounded bg-white mt-5 mb-5">
+				<div class="row flex-center justify-content-center">
+					<div class="col-md-3 border-right">
+						<div
+							class="d-flex flex-column align-items-center text-center p-3 py-5">
+							<img class="border border-black rounded-circle mt-5"
+								width="200px" height="200px"
+								src="/resources/images/kadyn_selfie.jpg"> <br> <span
+								class="text-black-50">Kadyn Neale - 3002244358 </span><span>
+							</span>
+							<div class="row">
+								<div class="col">
+									<input type="submit" class="btn btn-dark" value="About Kadyn">
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-3 border-right">
+						<div
+							class="d-flex flex-column align-items-center text-center p-3 py-5">
+							<img class="rounded-circle mt-5" width="200px" height="200px"
+								src="/resources/uploads/jhonatanpicture.jpeg"> <br> <span
+								class="text-black-50">Jhonatan Araneda - 300321686</span><span>
+							</span>
+							<div class="row">
+								<div class="col">
+									<input type="submit" class="btn btn-dark" value="About Jhonatan">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<label class="labels text-center">Hello and welcome to our home page! We are team Trikaja. For this
+					class we aim to complete a helpdesk application using springboot. To find out more
+					about one of us please click on a button below one of our profile
+					pics.</label>
 			</div>
-			<div class="col">
-				<img src="${host}/img/selfie_placeholder.jpg" />
-			</div>
-			<div class="col">
-				<img src="${host}/img/selfie_placeholder.jpg" />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<input type="submit" class="btn btn-primary" value="Get Likes">
-			</div>
-		</div>
 	</form>
-
-	<!-- Optional JavaScript; choose one of the two! -->
-
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-		crossorigin="anonymous"></script>
-
-	<!-- Option 2: Separate Popper and Bootstrap JS -->
-	<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
 </html>

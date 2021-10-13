@@ -8,6 +8,8 @@ public class Likes_kne_58 {
 		
 		String[] likes = new String[9];
 		
+		String likesMessage="One thing I like is ";
+		
 		likes[0]="Zelda";
 		likes[1]="One Piece";
 		likes[2]="Sushi";
@@ -23,7 +25,7 @@ public class Likes_kne_58 {
 		
 		int randNum = rand.nextInt(max);
 		
-		return likes[randNum];
+		return likesMessage += likes[randNum];
 		
 	}
 }

@@ -56,18 +56,17 @@ public class landing_controller {
 	private String phoneNumber = "778-691-9126";
 	private String pictureName = "jhonatanpicture.jpeg";
 
-	@RequestMapping("/index")
+	@RequestMapping("/jhonatanPage")
 	public String hello(ModelMap model) {
 		model.addAttribute("profileData",
 				new JhonatanProfileModel_jar_86(name, lastName, address, email, description, phoneNumber, pictureName));
 		return "profile_jar_86";
 	}
 
-	@PostMapping("/upload2")
-	public String singleFileUpload2(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes,
+	@PostMapping("/saveInformation")
+	public String saveInformation(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes,
 			HttpSession httpSession, ModelMap model, JhonatanProfileModel_jar_86 profile) {
 		model.addAttribute("profileData", profile);
-		System.out.println("nameasd: " + profile.getName());
 
 		name = profile.getName();
 		lastName = profile.getLastName();

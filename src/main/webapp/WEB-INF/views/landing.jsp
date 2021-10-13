@@ -36,7 +36,7 @@
 								</div>
 							</div>
 	</form>
-	<form method="POST" action="/editProfile" modelAttribute="profileData">
+	<form method="POST" action="/jhonatanPage" modelAttribute="profileData">
 	</div>
 	</div>
 

@@ -18,7 +18,7 @@
 <title>Jhonatan's Profile</title>
 </head>
 <body>
-<form method="POST" action="/upload2" modelAttribute="profileData" enctype="multipart/form-data">
+<form method="POST" action="/saveInformation" modelAttribute="profileData" enctype="multipart/form-data">
 		<div class="container">
 			<div class="container rounded bg-white mt-5 mb-5">
 				<div class="row">

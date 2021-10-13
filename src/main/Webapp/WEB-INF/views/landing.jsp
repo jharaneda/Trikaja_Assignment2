@@ -14,24 +14,27 @@
 <title>About Kadyn</title>
 </head>
 <body>
-	<form method="POST" action="/getLikes" modelAttribute="likesData">
+	<div class="container mt-5 mb-5 w-100 h-100">
 		<div class="row">
-			<div class="col">
-				<img src="${host}/img/selfie_placeholder.jpg" />
+			<div class="col w-20 h-20">
+				<img alt="image"
+					src="<c:url value="resources/selfie_placeholder.jpeg" />">
+				<p>Kadyn
 			</div>
 			<div class="col">
-				<img src="${host}/img/selfie_placeholder.jpg" />
+				<p>Johnathan
 			</div>
-			<div class="col">
-				<img src="${host}/img/selfie_placeholder.jpg" />
-			</div>
+
 		</div>
 		<div class="row">
 			<div class="col">
-				<input type="submit" class="btn btn-primary" value="Get Likes">
+				<p>Hello we are team Trikaja! A team working to create a
+					helpdesk app. Click on any profile image to get more information on
+					an individual profile image and it will lead you to a page about
+					us!
 			</div>
 		</div>
-	</form>
+	</div>
 
 	<!-- Optional JavaScript; choose one of the two! -->
 

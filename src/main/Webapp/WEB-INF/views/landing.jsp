@@ -25,10 +25,16 @@
 					<div class="col-md-3 border-right">
 						<div
 							class="d-flex flex-column align-items-center text-center p-3 py-5">
-							<img class="border border-black rounded-circle mt-5" width="200px" height="200px"
-								src="/resources/images/kadyn_selfie.jpg"> <br>
-							<span class="text-black-50">Kadyn Neale - 3002244358 </span><span>
+							<img class="border border-black rounded-circle mt-5"
+								width="200px" height="200px"
+								src="/resources/images/kadyn_selfie.jpg"> <br> <span
+								class="text-black-50">Kadyn Neale - 3002244358 </span><span>
 							</span>
+							<div class="row">
+								<div class="col">
+									<input type="submit" class="btn btn-primary" value="About Kadyn">
+								</div>
+							</div>
 
 						</div>
 					</div>
@@ -36,18 +42,22 @@
 						<div
 							class="d-flex flex-column align-items-center text-center p-3 py-5">
 							<img class="rounded-circle mt-5" width="200px" height="200px"
-								src="/resources/uploads/jhonatanpicture.jpeg"> <br>
-							<span class="text-black-50">Jhonatan Araneda - 300321686</span><span>
+								src="/resources/uploads/jhonatanpicture.jpeg"> <br> <span
+								class="text-black-50">Jhonatan Araneda - 300321686</span><span>
 							</span>
-
+							<div class="row">
+								<div class="col">
+									<input type="submit" class="btn btn-primary" value="About Jhonatan">
+								</div>
+							</div>
 						</div>
 					</div>
 
 				</div>
-				<label class="labels">Hello! We are team Trikaja. For this
-					class we aim to complete a helpdesk application. To find out more
+				<label class="labels">Hello and welcome to our home page! We are team Trikaja. For this
+					class we aim to complete a helpdesk application using springboot. To find out more
 					about one of us please click on a button below one of our profile
-					pics</label>
+					pics.</label>
 			</div>
 	</form>
 </body>

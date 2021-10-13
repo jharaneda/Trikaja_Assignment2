@@ -35,33 +35,34 @@
 									<input type="submit" class="btn btn-dark" value="About Kadyn">
 								</div>
 							</div>
+	</form>
+	<form method="POST" action="/editProfile" modelAttribute="profileData">
+	</div>
+	</div>
 
-						</div>
-					</div>
-		</form>
-		<form method="POST" action="/editProfile" modelAttribute="profileData">
-					<div class="col-md-3 border-right">
-						<div
-							class="d-flex flex-column align-items-center text-center p-3 py-5">
-							<img class="rounded-circle mt-5" width="200px" height="200px"
-								src="/resources/uploads/jhonatanpicture.jpeg"> <br> <span
-								class="text-black-50">Jhonatan Araneda - 300321686</span><span>
-							</span>
-							<div class="row">
-								<div class="col">
-									<input type="submit" class="btn btn-dark" value="About Jhonatan">
-								</div>
-							</div>
-						</div>
-					</div>
-
+	<div class="col-md-3 border-right">
+		<div
+			class="d-flex flex-column align-items-center text-center p-3 py-5">
+			<img class="rounded-circle mt-5" width="200px" height="200px"
+				src="/resources/uploads/jhonatanpicture.jpeg"> <br> <span
+				class="text-black-50">Jhonatan Araneda - 300321686</span><span>
+			</span>
+			<div class="row">
+				<div class="col">
+					<input type="submit" class="btn btn-dark" value="About Jhonatan">
 				</div>
-				<label class="labels text-center">Hello and welcome to our home page! We are team Trikaja. For this
-					class we aim to complete a helpdesk application using springboot. To find out more
-					about one of us please click on a button below one of our profile
-					pics.</label>
 			</div>
-			</form>
+		</div>
+	</div>
+	</form>
+
+	</div>
+	<label class="labels text-center">Hello and welcome to our home
+		page! We are team Trikaja. For this class we aim to complete a
+		helpdesk application using springboot. To find out more about one of
+		us please click on a button below one of our profile pics.</label>
+	</div>
+
 
 </body>
 </html>

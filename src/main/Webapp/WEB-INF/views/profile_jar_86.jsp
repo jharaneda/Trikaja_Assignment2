@@ -39,24 +39,24 @@
 							</div>
 							<div class="row mt-2">
 								<div class="col-md-6">
-									<label class="labels">Name: ${profileData.name}</label>
+									<label class="labels"><b>Name:</b> ${profileData.name}</label>
 								</div>
 								<div class="col-md-6">
-									<label class="labels">Surname: ${profileData.lastName}</label>
+									<label class="labels"><b>Last name:</b> ${profileData.lastName}</label>
 								</div>
 							</div>
 							<div class="row mt-3">
 								 <div class="col-md-12">
-									<label class="labels">PhoneNumber:  ${profileData.phoneNumber}</label>
+									<label class="labels"><b>PhoneNumber:</b>  ${profileData.phoneNumber}</label>
 								</div>
 								<div class="col-md-12">
-									<label class="labels">Address:  ${profileData.address}</label>
+									<label class="labels"><b>Address:</b>  ${profileData.address}</label>
 								</div>
 								<div class="col-md-12">
-									<label class="labels">Email:  ${profileData.email}</label>
+									<label class="labels"><b>Email:</b>  ${profileData.email}</label>
 								</div>
 								<div class="col-md-12">
-									<label class="labels">Description:  ${profileData.description}</label>
+									<label class="labels"><b>Description:</b>  ${profileData.description}</label>
 								</div>
 							</div>
 							<div class="mt-5 text-center">

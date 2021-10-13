@@ -18,7 +18,7 @@
 <title>Team Trikaja</title>
 </head>
 <body>
-	<form method="POST" action="/editProfile" modelAttribute="profileData">
+	<form method="POST" action="/kadynPage" modelAttribute="profileData">
 		<div class="container">
 			<div class="container rounded bg-white mt-5 mb-5">
 				<div class="row flex-center justify-content-center">
@@ -38,6 +38,8 @@
 
 						</div>
 					</div>
+		</form>
+		<form method="POST" action="/editProfile" modelAttribute="profileData">
 					<div class="col-md-3 border-right">
 						<div
 							class="d-flex flex-column align-items-center text-center p-3 py-5">
@@ -59,6 +61,7 @@
 					about one of us please click on a button below one of our profile
 					pics.</label>
 			</div>
-	</form>
+			</form>
+
 </body>
 </html>

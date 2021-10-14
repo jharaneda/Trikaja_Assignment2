@@ -1,7 +1,10 @@
 package com.csis3275.model;
 
 import java.util.Random;
-
+/**
+ * This class return a random like from an array when the user click "See one of my likes"
+ * @author Kadyn Neale
+ */
 public class Likes_kne_58 {
 	
 	public String likes() {

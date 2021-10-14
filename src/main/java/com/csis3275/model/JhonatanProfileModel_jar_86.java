@@ -1,5 +1,12 @@
 package com.csis3275.model;
 
+/**
+ * 
+ * @author Jhonatan Araneda
+ * This class manage the profile_jar_86 fields. Any time the user want to edit/see the profile
+ * a new object of this class will be created 
+ */
+
 public class JhonatanProfileModel_jar_86 {
 	private String name;
 	private String lastName;

@@ -1,11 +1,9 @@
 package com.csis3275.controller;
 
-import java.io.IOException;
 import java.nio.file.Files;
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -19,21 +17,44 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.csis3275.model.JhonatanProfileModel_jar_86;
 import com.csis3275.model.Likes_kne_58;
 
-
+/**
+ * 
+ * @author Jhonatan Araneda
+ * @author Kadyn Neale
+ * Controller class, every route and action is manage in this class
+ * 
+ */
 @Controller
 public class landing_controller {
-
+	/**
+	 * URL Path: /
+	 * @param model
+	 * @return landing.jsp view
+	 */
 	@RequestMapping("/")
 	public String presentForm(ModelMap model) {
 		return "landing";
 	}
 	
+	/**
+	 * URL Path: /kadynPage
+	 * @param model
+	 * @return kadynPage.jsp view
+	 */
 	@RequestMapping("/kadynPage")
 	public String presentFormTwo(ModelMap model) {
 		model.addAttribute("likesData", new Likes_kne_58());
 		return "kadynPage";
 	}
 	
+	/**
+	 * This method get a random like and return "likes" as key into the model
+	 * URL Path: /getLikes
+	 * @param likesData
+	 * @param result
+	 * @param model
+	 * @return kadynPage.jsp view
+	 */
 	@PostMapping("/getLikes")
 	public String getLikes(Likes_kne_58 likesData, BindingResult result, ModelMap model) {
 		System.out.println(likesData.likes());
@@ -55,7 +76,12 @@ public class landing_controller {
 			+ "That's how crazy they are.";
 	private String phoneNumber = "778-691-9126";
 	private String pictureName = "jhonatanpicture.jpeg";
-
+	
+	/**
+	 * This method add Jhonatan's info into the model and display it.
+	 * @param model
+	 * @return profile_jar_86.jsp view
+	 */
 	@RequestMapping("/jhonatanPage")
 	public String hello(ModelMap model) {
 		model.addAttribute("profileData",
@@ -63,9 +89,16 @@ public class landing_controller {
 		return "profile_jar_86";
 	}
 
+	/**
+	 * This method save the information from the input fields when the user click edit information. It also upload a new file into the server.
+	 * @param file
+	 * @param redirectAttributes
+	 * @param model
+	 * @param profile
+	 * @return profileEdited_jar_86.jsp view
+	 */
 	@PostMapping("/saveInformation")
-	public String saveInformation(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes,
-			HttpSession httpSession, ModelMap model, JhonatanProfileModel_jar_86 profile) {
+	public String saveInformation(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes, ModelMap model, JhonatanProfileModel_jar_86 profile) {
 		model.addAttribute("profileData", profile);
 
 		name = profile.getName();
@@ -75,6 +108,7 @@ public class landing_controller {
 		description = profile.getDescription();
 		phoneNumber = profile.getPhoneNumber();
 		pictureName = profile.getPictureName();
+		
 
 		if (file.isEmpty()) {
 			redirectAttributes.addFlashAttribute("message", "Please select a file to upload");
@@ -94,7 +128,14 @@ public class landing_controller {
 		}
 		return "profileEdited_jar_86";
 	}
-
+	
+	/**
+	 * This method return a view with input fields so the user can edit the information.
+	 * @param profile
+	 * @param result
+	 * @param model
+	 * @return profileEdit_jar_86.jsp view
+	 */
 	@PostMapping("/editProfile")
 	public String profileDescription(JhonatanProfileModel_jar_86 profile, BindingResult result, ModelMap model) {
 		model.addAttribute("profileData",
